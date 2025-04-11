@@ -143,9 +143,6 @@ h1 {
   transform: translate(-50%, -50%) scale(1);
   transition: transform 0.3s ease-in-out;
 
-  /* hard code the top and left for now, but JavaScript will adjust this with pseudorandom values */
-  top: 200px;
-  left: 300px;
 }
 
 .insect img {
