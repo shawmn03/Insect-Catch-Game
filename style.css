@@ -14,6 +14,14 @@ body {
   text-align: center;
 }
 
+a {
+  color: #fff;
+}
+
+h1 {
+  line-height: 1.4;
+}
+
 .btn {
   border: 0;
   background-color: #fff;
@@ -41,21 +49,13 @@ body {
   transition: margin 0.5s ease-out;
 }
 
-.choose-insect-btn img {
-  width: 100px;
-  height: 100px;
-  object-fit: contain;
+.screen.up {
+  margin-top: -100vh;
 }
 
-a {
-  color: #fff;
+.screen.game-container.up {
+  margin-top: -200vh;
 }
-
-h1 {
-  line-height: 1.4;
-}
-
-/* ... */
 
 .insects-list {
   display: flex;
@@ -84,15 +84,14 @@ h1 {
   color: #516dff;
 }
 
-.choose-insect-btn:active {
-  background-color: rgba(255, 255, 255, 0.7);
+.choose-insect-btn img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
 }
 
-.screen.up {
-  margin-top: -200vh;
-}
-
-.time, .score {
+.time,
+.score {
   position: absolute;
   top: 20px;
 }
@@ -104,9 +103,6 @@ h1 {
 .score {
   right: 20px;
 }
-
-/* Temporarily update the h5 class to include a class of visible */
-/*       <h5 id="message" class="message visible"> */
 
 .message {
   line-height: 1.7;
@@ -128,10 +124,6 @@ h1 {
   opacity: 1;
 }
 
-/* We can now remove the visible class from h5 */
-
-/* After the closing h5, temporarily add a div with a class of insect containing an image (the fly) so we can see it to style it */
-
 .insect {
   cursor: pointer;
   display: flex;
@@ -142,7 +134,6 @@ h1 {
   position: absolute;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 0.3s ease-in-out;
-
 }
 
 .insect img {
@@ -152,5 +143,4 @@ h1 {
 
 .insect.caught {
   transform: translate(-50%, -50%) scale(0);
-  /* Temporarily add the class caught to the div class="insect" to test */
 }
