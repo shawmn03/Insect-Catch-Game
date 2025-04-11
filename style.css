@@ -5,8 +5,8 @@
 }
 
 body {
-  background-color: #516dff;
-  color: #fff;
+  background-color: #5ac75a;
+  color: #134017;
   font-family: 'Press Start 2P', sans-serif;
   height: 100vh;
   overflow: hidden;
@@ -15,7 +15,7 @@ body {
 }
 
 a {
-  color: #fff;
+  color: #022905;
 }
 
 h1 {
@@ -24,8 +24,8 @@ h1 {
 
 .btn {
   border: 0;
-  background-color: #fff;
-  color: #516dff;
+  background-color: #d3f2d5;
+  color: #022905;
   padding: 15px 20px;
   font-family: inherit;
   cursor: pointer;
@@ -44,16 +44,12 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  width: 100vw;
+  height: 90vh;
+  width: 90vw;
   transition: margin 0.5s ease-out;
 }
 
 .screen.up {
-  margin-top: -100vh;
-}
-
-.screen.game-container.up {
   margin-top: -200vh;
 }
 
@@ -71,8 +67,8 @@ h1 {
 
 .choose-insect-btn {
   background-color: transparent;
-  border: 2px solid #fff;
-  color: #fff;
+  border: 2px solid #91ed98;
+  color: #91ed98;
   cursor: pointer;
   font-family: inherit;
   width: 150px;
@@ -80,8 +76,8 @@ h1 {
 }
 
 .choose-insect-btn:hover {
-  background-color: white;
-  color: #516dff;
+  background-color: #91ed98;
+  color: #022905;
 }
 
 .choose-insect-btn img {
@@ -106,7 +102,7 @@ h1 {
 
 .message {
   line-height: 1.7;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #91ed98;
   width: 100%;
   padding: 20px;
   z-index: 100;
