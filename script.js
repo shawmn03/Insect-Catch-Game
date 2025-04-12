@@ -18,9 +18,14 @@ chooseInsectBtns.forEach(btn => {
         const src = img.getAttribute('src');
         const alt = img.getAttribute('alt');
         selectedInsect = { src, alt };
-        screens[1].classList.add('up');
-        setTimeout(createInsect, 1000);
+
         startGame();
+
+        //don't immediately transition
+        setTimeout(() => {
+            screens[1].classList.add('up');
+            createInsect();
+        }, 500); //added delay
     });
 });
 
